@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
-//No se ve en opensea - 0x060497FE1fEA36EA2cdf829531E434eA79DbC55C
-//address - 0x99c39e4Fd02Ba0D705Fd8c781913aA6Cb35Bf762
+// No se ve en opensea - 0x060497FE1fEA36EA2cdf829531E434eA79DbC55C   Estaba mal el array de uris
+// idem                  0x99c39e4Fd02Ba0D705Fd8c781913aA6Cb35Bf762   idem
+// 0x750BE99f42e08d6BCD9f851C12Db29970cF4ebCf
+
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts@4.8.2/token/ERC721/ERC721.sol";
@@ -37,9 +39,9 @@ contract DNFT is ERC721, ERC721URIStorage, AutomationCompatibleInterface {
 
     mapping (uint256 => uint256) nftStatus;
     string[] ipfsUri = [
-        "https://ipfs.io/ipfs/QmR8LzyxnbD42FkUVPuzTWyNzi3cN4Bq47nhboSgy5bKwV/state_0.jpg",
-        "https://ipfs.io/ipfs/QmR8LzyxnbD42FkUVPuzTWyNzi3cN4Bq47nhboSgy5bKwV/state_1.jpg",
-        "https://ipfs.io/ipfs/QmR8LzyxnbD42FkUVPuzTWyNzi3cN4Bq47nhboSgy5bKwV/state_2.jpg"
+        "https://ipfs.io/ipfs/QmWXJsTejP4688dZferHR475uUPk1aXF23MJLZSUPjhvcK/state_0.json",
+        "https://ipfs.io/ipfs/QmWXJsTejP4688dZferHR475uUPk1aXF23MJLZSUPjhvcK/state_1.json",
+        "https://ipfs.io/ipfs/QmWXJsTejP4688dZferHR475uUPk1aXF23MJLZSUPjhvcK/state_2.json"
     ];
     
     function safeMint(address to, string memory /*uri*/) public  {
@@ -77,5 +79,8 @@ contract DNFT is ERC721, ERC721URIStorage, AutomationCompatibleInterface {
         returns (string memory)
     {
         return gerUriById(_tokenId);
+    }
+    function getTotalMinted()public view returns(uint256){
+        return _tokenIdCounter.current();
     }
 }

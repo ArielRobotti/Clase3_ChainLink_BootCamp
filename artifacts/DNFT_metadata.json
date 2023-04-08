@@ -224,6 +224,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getTotalMinted",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "interval",
 				"outputs": [
 					{
@@ -695,11 +708,11 @@
 			]
 		},
 		"contract-3b48812064.sol": {
-			"keccak256": "0x50feffb05854187e25dadfed259858ed40b30fda36d2d58e55affc56d740016a",
+			"keccak256": "0x08f7e40d8dc7af676e5486587b789bb71f9eb055df6b4ba386ba0875ae94eb91",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2d17d24b0e13e0773fac8d6306406e5e9e3a744df424cb326029fdfa13a9e525",
-				"dweb:/ipfs/QmV9ekBsK7LhaPdp9inZMMmb4jqXYwrzPGnuGwXwSr8s2v"
+				"bzz-raw://2947740e97b6dc65d471bbd93b0075eecd34a4c80857a2285934b69e4f4157dc",
+				"dweb:/ipfs/QmPZ4X6UyibJLgV9BnytNgP4ta8DPcWR3tEUoRgVQwNC2y"
 			]
 		}
 	},
