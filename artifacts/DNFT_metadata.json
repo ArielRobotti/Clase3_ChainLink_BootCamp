@@ -8,9 +8,14 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint16",
 						"name": "_interval",
-						"type": "uint256"
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_maxMintableNFTs",
+						"type": "uint16"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -92,6 +97,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "_tokenIdCounter",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -147,19 +165,6 @@
 						"internalType": "bytes",
 						"name": "",
 						"type": "bytes"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "counter",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -240,9 +245,9 @@
 				"name": "interval",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint16",
 						"name": "",
-						"type": "uint256"
+						"type": "uint16"
 					}
 				],
 				"stateMutability": "view",
@@ -280,6 +285,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxMintableNFTs",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
 					}
 				],
 				"stateMutability": "view",
@@ -667,14 +685,6 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"@openzeppelin/contracts@4.8.2/utils/Counters.sol": {
-			"keccak256": "0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee",
-				"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu"
-			]
-		},
 		"@openzeppelin/contracts@4.8.2/utils/Strings.sol": {
 			"keccak256": "0xa4d1d62251f8574deb032a35fc948386a9b4de74b812d4f545a1ac120486b48a",
 			"license": "MIT",
@@ -708,11 +718,11 @@
 			]
 		},
 		"contract-3b48812064.sol": {
-			"keccak256": "0x08f7e40d8dc7af676e5486587b789bb71f9eb055df6b4ba386ba0875ae94eb91",
+			"keccak256": "0xf58d4457227143c6ae75acc2ccf2edc1fb7895c48a1ea3be560fa2b22ec9ecb3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2947740e97b6dc65d471bbd93b0075eecd34a4c80857a2285934b69e4f4157dc",
-				"dweb:/ipfs/QmPZ4X6UyibJLgV9BnytNgP4ta8DPcWR3tEUoRgVQwNC2y"
+				"bzz-raw://6e1a3321f441541471536809b72ac7fb0487b44d9ccad982ae4e4859297b2cae",
+				"dweb:/ipfs/QmNdRA4eBvgKVuMRMf5JQZmJE6MjjXvQo7A627ocGgn6un"
 			]
 		}
 	},
